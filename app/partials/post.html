@@ -1,0 +1,35 @@
+<div class="container" >
+<article>
+	  <div><h1>
+	  	<small>New Post</small></h1>
+	  </div>
+
+
+	<section>
+
+        
+          <div class="blog-post" >
+ 				<div class = "row">         	
+          		<div class="input-group col-sm-6">
+          			<form ng-submit="newPost()" ng-controller="mainSiteController">
+          				<button  type="submit" placeholder="...">Submit!</button>
+          			<input type="text" name="testData" class="form-control" ng-model="siteData.title" placeholder="...">
+          		</form>
+          		</div>
+          	</div>
+
+          </div><!-- /.blog-post -->
+      
+
+<!--
+	  <div class="row" ng-repeat='item in section'>
+ 	
+		<div class="col-md-12"><h2><small>{{item.sectionheading}}</small></h2></div>
+		<div class="col-md-4"><p>{{item.sectionbody}}</p></div>
+	
+	  </div>
+
+	-->
+	 </section>
+</article>
+</div>

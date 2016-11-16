@@ -1,0 +1,55 @@
+{
+"site":{
+
+		"contacts":[
+	
+				{
+				  "contactid":"1",
+				  "firstname":"Allen",
+				  "lastname":"Friedman"
+				}
+			],
+
+			"siteinfo":{
+				"siteid":"1",
+				"sitename":"A Chilling Experiment",
+				"siteheading":"Is ice heavier than water and why does ice float?",
+				"sitedescription":"Properties of water."
+			},
+			
+			"article":{
+				"articleid":"1",
+				"articletitle":"Is Ice Heavier Than Water?",
+				
+				"section":[
+					{
+						"sectionid":"1",
+						"sectionheading":"Hypothesis",
+						"sectionbody":"I think that ice is heavier than water because solids are heavier than liquids.",
+						"meta":"A Chilling Experiment",
+						"author":"Allen Friedman"
+						},
+					{
+						"sectionid":"2",
+						"sectionheading":"Purpose", 
+						"sectionbody":"To determine the weight of water compared to ice.  Additionally we would also like to know why there is or is not a difference through research of the properties of water.",
+						"meta":"A Chilling Experiment",
+						"author":"Allen Friedman"
+					},
+
+
+					{
+						"sectionid":"3",
+						"sectionheading":"Research", 
+						"sectionbody":"Ice floats because ice is less dense than water.  This means that given an equal volume of water and ice the water will weigh more.  Meaning that water has more H20 molecules per unit of volume than ice",
+						"meta":"Why does ice float?",
+						"author":"Allen Friedman"
+					}
+
+
+				]
+				
+			}
+
+		}
+	}
