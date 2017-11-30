@@ -1,6 +1,6 @@
 'use strict';
 // Make sure to include the `ui.router` module as a dependency
-angular.module('uiRouterDemo', [
+angular.module('blogApp', [
     'ui.router', 
   'ngAnimate','siteService','siteControllers'
 ])
@@ -15,7 +15,7 @@ angular.module('uiRouterDemo', [
   ]
 )
 
-.config(['$stateProvider', '$urlRouterProvider','siteConfigProvider','$provide',
+.config(['$stateProvider', '$urlRouterProvider','siteConfigProvider',
     function ($stateProvider,$urlRouterProvider,siteConfigProvider) {
       $urlRouterProvider
         .otherwise('/');
@@ -42,9 +42,35 @@ angular.module('uiRouterDemo', [
           templateUrl: 'partials/hypothesis.html'
         })
 
+
         .state('article',{
           url: '/article',
           templateUrl:'partials/article.html'
+        })
+
+        .state('post',{
+          url: '/post',
+          templateUrl:'partials/post.html'
+        })
+
+        .state('properties',{
+          url: '/properties',
+          templateUrl:'partials/properties.html'
+        })
+
+        .state('method',{
+          url: '/method',
+          templateUrl:'partials/method.html'
+        })
+
+        .state('displacement',{
+          url: '/displacement',
+          templateUrl:'partials/displacement.html'
+        })
+
+        .state('precision',{
+          url: '/precision',
+          templateUrl:'partials/precision.html'
         })
 
         var siteConfig = {"siteName":"name of site", "siteID":5084220, "baseUrl":'json/site.json'};

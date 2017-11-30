@@ -1,10 +1,4 @@
 angular.module('siteControllers',[])
-.config(['siteConfigProvider',function(siteConfigProvider){
-
-	var siteConfig = { "siteName": "name of site", "siteID": 5084220, "baseUrl": 'json/site.json' };
-	siteConfigProvider.siteSettings(siteConfig);
-}])
-
 
 .controller('mainSiteController',['modelService', '$scope',function(modelService,$scope){
 //var s = siteStage('json/site.json');

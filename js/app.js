@@ -15,7 +15,7 @@ angular.module('uiRouterDemo', [
   ]
 )
 
-.config(['$stateProvider', '$urlRouterProvider','siteConfigProvider','$provide',
+.config(['$stateProvider', '$urlRouterProvider','siteConfigProvider',
     function ($stateProvider,$urlRouterProvider,siteConfigProvider) {
       $urlRouterProvider
         .otherwise('/');

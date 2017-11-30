@@ -1,4 +1,6 @@
 'use strict';
+
+
 // Make sure to include the `ui.router` module as a dependency
 angular.module('blogApp', [
     'ui.router', 
@@ -15,8 +17,8 @@ angular.module('blogApp', [
   ]
 )
 
-.config(['$stateProvider', '$urlRouterProvider','siteConfigProvider',
-    function ($stateProvider,$urlRouterProvider,siteConfigProvider) {
+.config(['$stateProvider', '$urlRouterProvider',
+    function ($stateProvider,$urlRouterProvider) {
       $urlRouterProvider
         .otherwise('/');
 
@@ -73,9 +75,11 @@ angular.module('blogApp', [
           templateUrl:'partials/precision.html'
         })
 
-        var siteConfig = {"siteName":"name of site", "siteID":5084220, "baseUrl":'json/site.json'};
-        siteConfigProvider.siteSettings(siteConfig);
 
-    }
-  ]
+
+    },
+
+ ]
+
+ 
 );
