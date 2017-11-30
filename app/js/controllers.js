@@ -41,6 +41,7 @@ $scope.contactsA = $scope.contacts[0];
 	}    
 
 }])
+.directive('myDirective',function(){})
 
 .controller('postController',['$scope','modelService',function($scope,modelService){
 
